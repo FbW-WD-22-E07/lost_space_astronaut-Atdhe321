@@ -11,11 +11,19 @@ body {
 #hero {
   height: 60vh;
   /* add Space_Transportation as background image */
+  background-image: url(./Space_Transportation.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 #hero-img {
   /* add position */
   /* and if you want transition effects */
+  width 20%;
+  position: absolute;
+  right: 50px;
+  transition: 1s;
 }
 
 #hero:hover #hero-img {
@@ -27,6 +35,9 @@ body {
     transform: scale(.3) translate(-50px, -250px) rotate(3turn);
 } */
 
+#hero-img:hover{
+  transform: scale(.3); translate: (-50px,  -250px); rotate: 30;
+}
 main {
     width: 90vw;
     margin: auto;
